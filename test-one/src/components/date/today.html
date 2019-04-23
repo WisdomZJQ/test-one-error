@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../../css/index.css">
+    <meta charset="UTF-8">
+    <title>today</title>
+</head>
+<body>
+<div class="today">
+    <div class="today-times">
+        <span class="today-day" type="text" id="today" >2018年4月23</span>
+        <span class="today-time" type="text" id="today-time">12时12分12秒</span>
+    </div>
+    <input type="button" value="刷新" onclick="today();">
+</div>
+
+
+<script>
+    function today() {
+        var dates = new Date();
+        var year = dates.getFullYear();
+        var month = dates.getMonth() + 1;
+        var day = dates.getDate();
+        var hours = dates.getHours();
+        var minutes = dates.getMinutes();
+        var seconds = dates.getSeconds();
+        var week = dates.getDay();
+        document.getElementById("today").innerHTML = year + "年" + month + "月" + day + "日";
+        document.getElementById("today-time").innerHTML = hours + "时" + minutes + "分" + seconds + "秒";
+    }
+    setInterval("today()",1000);
+</script>
+
+</body>
+</html>

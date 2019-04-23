@@ -3,7 +3,7 @@ head , body , ul , li {
     margin: 0;
 }
 
-/*登录界面*/
+/* 登录界面 login */
 .login {
     position: absolute;
     width: 100%;
@@ -70,4 +70,22 @@ head , body , ul , li {
     border-radius: 6px;
     padding: 0 20px 0 20px;
     border: 1px solid rgba(0,0,0,0);
+}
+
+/* 时间日期 today */
+.today {
+    padding: 10px;
+}
+
+.today-times {
+    font-size: 30px;
+    color: #adadad;
+}
+
+.today-day {
+    float: left;
+}
+
+.today-time {
+    float: right;
 }
