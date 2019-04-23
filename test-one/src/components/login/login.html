@@ -1,10 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="../../css/index.css" rel="stylesheet" type="text/css">
     <meta charset="UTF-8">
     <title>登录页面</title>
 </head>
 <body>
+<div class="login">
+    <div class="login-box">
+        <div class="login-box-text">登录</div>
+        <div class="login-information">
+            <form name="loginForm" action="http://baidu.com" method="post">
+                <div class="login-name">
+                    账号：<input type="text" id="login-user-name" placeholder="请输入账号" />
+                </div>
+                <div class="login-password">
+                    密码：<input type="password" id="login-user-password" placeholder="请输入密码" />
+                </div>
+                <div class="login-in">
+                    <input type="button" value="登入" onclick="loginin();">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function loginin() {
+        var username = document.getElementById("login-user-name");
+        var password = document.getElementById("login-user-password");
+        if (username.value == "") {
+            alert("请输入用户名");
+            username.focus();
+            return;
+        } else if(password.value == "") {
+            alert("请输入密码");
+            password.focus();
+            return;
+        } else if (username.value == "123" && password.value == "321") {
+            loginForm.submit();
+        } else {
+            alert("登录失败，请检查账号密码！");
+            return;
+        }
+        return true;
+    }
+</script>
 
 </body>
 </html>
