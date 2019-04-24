@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="../../css/index.css">
+    <meta charset="UTF-8">
+    <title>today</title>
+</head>
+<body>
+<div class="today">
+    <div class="today-times">
+        <span class="today-day" type="text" id="today" >2018年4月23日星期二</span>
+        <span class="today-time" type="text" id="today-time">00时00分00秒</span>
+    </div>
+</div>
+
+
+<script>
+    function today() {
+        var dates = new Date();
+        var year = dates.getFullYear();
+        var month = dates.getMonth() + 1;
+        var day = dates.getDate();
+        var hours = dates.getHours();
+        var minutes = dates.getMinutes();
+        var seconds = dates.getSeconds();
+        var week = dates.getDay();
+        if (week == 0) week = "星期日" ;
+        if (week == 1) week = "星期一" ;
+        if (week == 2) week = "星期二" ;
+        if (week == 3) week = "星期三" ;
+        if (week == 4) week = "星期四" ;
+        if (week == 5) week = "星期五" ;
+        if (week == 6) week = "星期六" ;
+        document.getElementById("today").innerHTML = year + "年" + month + "月" + day + "日" + week;
+        document.getElementById("today-time").innerHTML = hours + "时" + minutes + "分" + seconds + "秒";
+    }
+    setInterval("today()",1000);
+</script>
+
+</body>
+</html>
