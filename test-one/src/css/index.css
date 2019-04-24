@@ -91,3 +91,16 @@ head , body , ul , li {
 .today-time {
     float: right;
 }
+
+/* 回复feedback */
+.feedback-box {
+    width: 600px;
+    height: 300px;
+    background-color: #9c5814;
+}
+
+.feedback-color-bar {
+    width: 600px;
+    height: 300px;
+    background-color: red;
+}

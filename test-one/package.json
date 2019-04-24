@@ -1,0 +1,19 @@
+{
+  "name": "test-one",
+  "version": "1.0.0",
+  "description": "test-one npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "command"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WisdomZJQ/test-one.git"
+  },
+  "author": "ZJQ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WisdomZJQ/test-one/issues"
+  },
+  "homepage": "https://github.com/WisdomZJQ/test-one#readme"
+}
